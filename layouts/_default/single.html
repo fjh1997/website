@@ -12,14 +12,54 @@
     <link rel="stylesheet" href="/css/less.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/ny.css">
+     <style>
+        /* 定义一个 Flex 容器，让内部元素横向排列并垂直居中 */
+        .logo-container {
+            display: flex;
+            align-items: center; /* 保持垂直居中对齐 */
+            text-decoration: none; /* 去掉链接下划线 */
+        }
+        
+        /* Logo 图片样式 */
+        .logo-img {
+            height: 50px; /* 图片高度 */
+            width: auto;
+            margin-right: 15px; /* 图片和文字之间的间距 */
+        }
+
+        /* Logo 文字样式 */
+        .logo-text {
+            color: #ffffff; /* 白色文字 */
+            font-size: 32px; 
+            font-weight: bold; 
+            line-height: 1; 
+            white-space: nowrap;
+            letter-spacing: 1px;
+            
+            /* 【新增】设置字体为楷体，提供多个备选以兼容不同系统 */
+            font-family: "KaiTi", "STKaiti", "楷体", serif;
+            
+            /* 【新增】使用负外边距让文字向上微调，数值越小越靠上，可根据需要修改 */
+            margin-top: -4px; 
+        }
+
+        /* 针对小屏幕手机的适配 */
+        @media (max-width: 768px) {
+            .logo-img { height: 36px; margin-right: 8px; }
+            .logo-text { font-size: 20px; margin-top: -2px; } /* 手机端也相应微调 */
+        }
+    </style>
 </head>
 <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
 
     <div class="header">
         <div class="wp">
-            <div class="logo">
-                <a href="/"><img src="/images/logotb2025.png" alt="Logo"></a>
-            </div>
+    <div class="logo">
+        <a href="/" class="logo-container">
+            <img src="/images/logotb2025.png" alt="印象校联 logo" class="logo-img">
+            <span class="logo-text">印象校联商业集团（杭州）有限公司</span>
+        </a>
+    </div>
             <div class="hdr">
                 <div class="nav">
                     <ul>
