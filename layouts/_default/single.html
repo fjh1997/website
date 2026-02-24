@@ -6,12 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <link rel="stylesheet" href="/css/cui.css">
-    <link rel="stylesheet" href="/css/lib.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cui.css" />
+    <link rel="stylesheet" href="/css/lib.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/less.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/ny.css">
+        <script type="text/javascript" src="/js/jq.js"></script>
+    <script type="text/javascript" src="/js/jsd.js"></script>
+    <script type="text/javascript" src="/js/lib.js"></script>
+    <script type="text/javascript" src="/js/slide.js"></script>
+    <style>
+        .channel-list { padding: 20px 0; }
+        .channel-list li { border-bottom: 1px dashed #eee; padding: 15px 0; transition: all 0.3s; }
+        .channel-list li:hover { transform: translateX(5px); }
+        .channel-list a { display: flex; justify-content: space-between; align-items: center; }
+        .channel-list .tit  { font-size: 16px !important; color: #333; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .channel-list .date { font-size: 14px; color: #999; width: 100px; text-align: right; }
+        .channel-list a:hover .tit, .channel-list a:hover .date { color: #005a8c; }
+        
+        .pagination { margin-top: 30px; text-align: center; display: flex; justify-content: center; gap: 10px; }
+        .pagination a, .pagination span { display: inline-block; padding: 8px 15px; border: 1px solid #ddd; color: #666; border-radius: 3px; }
+        .pagination .active { background-color: #005a8c; color: #fff; border-color: #005a8c; }
+        .pagination a:hover { background-color: #f5f5f5; color: #005a8c; }
+    </style>
      <style>
         /* 定义一个 Flex 容器，让内部元素横向排列并垂直居中 */
         .logo-container {
@@ -50,7 +68,7 @@
         }
     </style>
 </head>
-<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+<body  data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
 
     <div class="header">
         <div class="wp">
@@ -60,10 +78,10 @@
             <span class="logo-text">印象校联商业集团（杭州）有限公司</span>
         </a>
     </div>
+        <span class="menuBtn"></span>
             <div class="hdr">
                 <div class="nav">
                     <ul>
-
                         <li {{ if .IsHome }}class="on"{{ end }}>
                             <a href="/" class="v1">首页</a>
                         </li>
@@ -88,7 +106,6 @@
                             <a href="/invest/contact/" class="v1">招商引资</a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </div>
@@ -103,7 +120,7 @@
     <section class="n_container bg1 n_news_detail">
         <div class="wp flex">
             <div class="n_left">
-                <div class="tit1">新闻中心</div>
+                <div class="tit1">{{ .Title }}</div>
                 <ul class="list_er">
                     <li><a href="/about/overview/" class="a">集团概况</a></li>
                     <li><a href="/invest/contact/" class="a">招商引资</a></li>
@@ -168,6 +185,32 @@
             </div>
         </div>
     </div>
+    <div class="fix-right">
+        <ul>
+            <li class="i1"><a href="mailto:zhaoshang@yinxiangxiaolian.com" class="con"><span class="ico"></span><em>邮箱</em></a></li>
+            <li class="i2"><a href="tel:057187951119" class="con"><span class="ico"></span><em>热线电话</em></a></li>
+            <li class="i3"><a href="javascript:;" class="con"><span class="ico"></span></a></li>
+        </ul>
+    </div>
 
+    <link rel="stylesheet" href="/css/slick.css">
+    <script src="/js/slick.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.banner .slider').slick({
+            dots:true, arrows:false, autoplay:true, slidesToShow: 1, autoplaySpeed: 5000, pauseOnHover:false, lazyLoad: 'ondemand'
+        });
+        $('.m-slider1 .slider').slick({
+            dots:false, arrows:true, autoplay:true, slidesToShow: 1, autoplaySpeed: 5000, pauseOnHover:false, lazyLoad: 'ondemand'
+        });
+    });
+    </script>
+    
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <script type="text/javascript" src="/js/wow.min.js"></script>
+    <script>
+        var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 10, mobile: false, live: true });
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){ wow.init(); };
+    </script>
 </body>
 </html>

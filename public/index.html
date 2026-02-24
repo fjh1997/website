@@ -6,18 +6,32 @@
     <title>印象校联商业集团</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="format-detection" content="telephone=no">
     
     <link rel="stylesheet" href="/css/cui.css" />
     <link rel="stylesheet" href="/css/lib.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/less.css">
-    
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/ny.css">
     <script type="text/javascript" src="/js/jq.js"></script>
     <script type="text/javascript" src="/js/jsd.js"></script>
     <script type="text/javascript" src="/js/lib.js"></script>
     <script type="text/javascript" src="/js/slide.js"></script>
-  <style>
+    <style>
+        .channel-list { padding: 20px 0; }
+        .channel-list li { border-bottom: 1px dashed #eee; padding: 15px 0; transition: all 0.3s; }
+        .channel-list li:hover { transform: translateX(5px); }
+        .channel-list a { display: flex; justify-content: space-between; align-items: center; }
+        .channel-list .tit  { font-size: 16px !important; color: #333; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .channel-list .date { font-size: 14px; color: #999; width: 100px; text-align: right; }
+        .channel-list a:hover .tit, .channel-list a:hover .date { color: #005a8c; }
+        
+        .pagination { margin-top: 30px; text-align: center; display: flex; justify-content: center; gap: 10px; }
+        .pagination a, .pagination span { display: inline-block; padding: 8px 15px; border: 1px solid #ddd; color: #666; border-radius: 3px; }
+        .pagination .active { background-color: #005a8c; color: #fff; border-color: #005a8c; }
+        .pagination a:hover { background-color: #f5f5f5; color: #005a8c; }
+    </style>  
+    <style>
          
         .logo-container {
             display: flex;
@@ -55,7 +69,7 @@
         }
     </style>
 </head>
-<body>
+<body  data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
 
     <div class="header">
         <div class="wp">
@@ -66,13 +80,12 @@
         </a>
     </div>
             <span class="menuBtn"></span>
-            <span class="so-btn"></span>
             <div class="hdr">
              <div class="nav">
                     <ul>
                         <li class="on"><a href="/" class="v1">首页</a></li>
                         <li><a href="/about/overview/" class="v1">集团概况</a></li>
-                        <li><a href="/news/" class="v1">新闻中心</a></li>
+                        <li><a href="/news/" class="v1">新闻动态</a></li>
                         
                         <li><a href="/party/" class="v1">校园合作</a></li>
                         
@@ -326,6 +339,5 @@
         var wow = new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 10, mobile: false, live: true });
         if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){ wow.init(); };
     </script>
-
 </body>
 </html>
