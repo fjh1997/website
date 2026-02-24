@@ -38,9 +38,34 @@
     .fd-logo{margin-bottom: 0.625vw;}
     .fd-logo img{height: 2.812vw;}
     
-    .fd-r{width: 6.718vw;}
-    .fd-r img{margin-bottom: 0.625vw;}
-    .fd-r span{font-size: 0.729vw;}
+.fd-r { 
+    width: 6.718vw; 
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+    margin: 0 1vw;          /* 【新增】加上左右间距，把两个二维码强制分开 */
+}
+
+.fd-r span { 
+    font-size: 0.729vw; 
+}
+
+.fd-r .pic {
+    height: 6.718vw;       
+    background-color: #ffffff; /* 【新增】给正方形盒子铺满纯白背景 */
+    border-radius: 4px;        /* 【新增】加一点点圆角，视觉上更精致（不需要可删除） */
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    margin-bottom: 0.625vw;
+}
+
+.fd-r .pic img {
+    max-width: 92%;        /* 【修改】不要设为100%，改成92%让图片不至于死死贴在白框边缘 */
+    max-height: 92%;
+    object-fit: contain;   
+    margin-bottom: 0;      
+}
     
     .fix-right{right: 1.083vw;width: 5.208vw;}
     .fix-right .con{height: 4.687vw;margin: 0 0.520vw;
