@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }} - 印象校联商业集团</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <link rel="stylesheet" href="/css/cui.css">
+    <link rel="stylesheet" href="/css/lib.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/less.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/ny.css">
+</head>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+
+    <div class="header">
+        <div class="wp">
+            <div class="logo">
+                <a href="/"><img src="/images/logotb2025.png" alt="Logo"></a>
+            </div>
+            <div class="hdr">
+                <div class="nav">
+                    <ul>
+
+                        <li {{ if .IsHome }}class="on"{{ end }}>
+                            <a href="/" class="v1">首页</a>
+                        </li>
+                        
+                        <li {{ if eq .Section "about" }}class="on"{{ end }}>
+                            <a href="/about/overview/" class="v1">集团概况</a>
+                        </li>
+                        
+                        <li {{ if eq .Section "news" }}class="on"{{ end }}>
+                            <a href="/news/" class="v1">新闻动态</a>
+                        </li>
+                        
+                        <li {{ if eq .Section "party" }}class="on"{{ end }}>
+                            <a href="/party/" class="v1">校园合作</a>
+                        </li>
+                        
+                        <li {{ if eq .Section "notice" }}class="on"{{ end }}>
+                            <a href="/notice/" class="v1">通知公告</a>
+                        </li>
+                        
+                        <li {{ if eq .Section "invest" }}class="on"{{ end }}>
+                            <a href="/invest/contact/" class="v1">招商引资</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="n_banner">
+        <div class="img imgBox">
+            <div class="imgLi" style="background: url(/images/n_b2-1.jpg) center no-repeat;"></div>
+        </div>
+    </div>
+
+    <section class="n_container bg1 n_news_detail">
+        <div class="wp flex">
+            <div class="n_left">
+                <div class="tit1">新闻中心</div>
+                <ul class="list_er">
+                    <li><a href="/about/overview/" class="a">集团概况</a></li>
+                    <li><a href="/invest/contact/" class="a">招商引资</a></li>
+                </ul>
+            </div>
+
+            <div class="n_right">
+                <div class="mianbao">
+                    <img src="/images/mianbao_i.png" alt="">
+                    <a href="/">首页</a>
+                    <span>&gt;</span>
+                    <a href="/news/">新闻中心</a>
+                    <span>&gt;</span>
+                    正文
+                </div>
+
+                <div class="ar_article_box">
+                    <div class="nav01">
+                        <h3>{{ .Title }}</h3>
+                        <h6>
+                            <div class="ll">
+                                <div class="h6">
+                                    <span><img src="/images/nav01.png" alt="">印象校联</span>
+                                </div>
+                                <div class="h6">
+                                    <span><img src="/images/nav02.png" alt="">{{ .Date.Format "2006-01-02" }}</span>
+                                </div>
+                            </div>
+                        </h6>
+                    </div>
+        
+                    <div id="vsb_content" class="ar_article">
+                        <div class="v_news_content">
+                            {{ .Content }}
+                        </div>
+                    </div>
+                    
+                    <section id="ar_fot">
+                        <div class="ll">
+                            {{ with .NextInSection }}
+                            <h1 class="highlight prev"><a href="{{ .RelPermalink }}"><span>上一篇：</span>{{ .Title }}</a></h1>
+                            {{ end }}
+                            
+                            {{ with .PrevInSection }}
+                            <h1 class="highlight next"><a href="{{ .RelPermalink }}"><span>下一篇：</span>{{ .Title }}</a></h1>
+                            {{ end }}
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="footer footer1 wow fadeInUp">
+        <div class="wp">
+            <div class="fd-c">
+                <div class="fd-txt">
+                    <div class="item">总值班电话：<span class="tel">87951119</span></div>
+                    <div class="item">版权所有©印象校联商业集团 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

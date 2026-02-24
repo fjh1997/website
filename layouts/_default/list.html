@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }} - 印象校联商业集团</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <link rel="stylesheet" href="/css/cui.css">
+    <link rel="stylesheet" href="/css/lib.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/less.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/ny.css">
+
+    <style>
+        .channel-list { padding: 20px 0; }
+        .channel-list li { border-bottom: 1px dashed #eee; padding: 15px 0; transition: all 0.3s; }
+        .channel-list li:hover { transform: translateX(5px); }
+        .channel-list a { display: flex; justify-content: space-between; align-items: center; }
+        .channel-list .tit  { font-size: 16px !important; color: #333; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .channel-list .date { font-size: 14px; color: #999; width: 100px; text-align: right; }
+        .channel-list a:hover .tit, .channel-list a:hover .date { color: #005a8c; }
+        
+        .pagination { margin-top: 30px; text-align: center; display: flex; justify-content: center; gap: 10px; }
+        .pagination a, .pagination span { display: inline-block; padding: 8px 15px; border: 1px solid #ddd; color: #666; border-radius: 3px; }
+        .pagination .active { background-color: #005a8c; color: #fff; border-color: #005a8c; }
+        .pagination a:hover { background-color: #f5f5f5; color: #005a8c; }
+    </style>
+</head>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+
+    <div class="header">
+        <div class="wp">
+            <div class="logo">
+                <a href="/"><img src="/images/logotb2025.png" alt="Logo"></a>
+            </div>
+            <div class="hdr">
+                <div class="nav">
+            <ul>
+                <li {{ if .IsHome }}class="on"{{ end }}>
+                    <a href="/" class="v1">首页</a>
+                </li>
+                
+                <li {{ if eq .Section "about" }}class="on"{{ end }}>
+                    <a href="/about/overview/" class="v1">集团概况</a>
+                </li>
+                
+                <li {{ if eq .Section "news" }}class="on"{{ end }}>
+                    <a href="/news/" class="v1">新闻中心</a>
+                </li>
+                
+                <li {{ if eq .Section "party" }}class="on"{{ end }}>
+                    <a href="/party/" class="v1">校园合作</a>
+                </li>
+                
+                <li {{ if eq .Section "notice" }}class="on"{{ end }}>
+                    <a href="/notice/" class="v1">通知公告</a>
+                </li>
+                
+                <li {{ if eq .Section "invest" }}class="on"{{ end }}>
+                    <a href="/invest/contact/" class="v1">招商引资</a>
+                </li>
+            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="n_banner">
+        <div class="img imgBox">
+            <div class="imgLi" style="background: url(/images/n_b2-1.jpg) center no-repeat;"></div>
+        </div>
+    </div>
+
+    <section class="n_container bg1 n_news_detail">
+        <div class="wp flex">
+            <div class="n_left">
+                <div class="tit1">{{ .Title }}</div>
+                <ul class="list_er">
+                    <li><a href="/news/" class="a">新闻动态</a></li>
+                    <li><a href="/party/" class="a">校园合作</a></li>
+                    <li><a href="/notice/" class="a">通知公告</a></li>
+                </ul>
+            </div>
+
+            <div class="n_right">
+                <div class="mianbao">
+                    <img src="/images/mianbao_i.png" alt="">
+                    <a href="/">首页</a>
+                    <span>&gt;</span>
+                    {{ .Title }}
+                </div>
+
+                <div class="ar_article_box">
+                    <ul class="channel-list">
+                        {{ $paginator := .Paginate .Pages }}
+                        {{ range $paginator.Pages }}
+                        <li>
+                            <a href="{{ .RelPermalink }}">
+                                <h3 class="tit">{{ .Title }}</h3>
+                                <span class="date">{{ .Date.Format "2006-01-02" }}</span>
+                            </a>
+                        </li>
+                        {{ end }}
+                    </ul>
+
+                    <div class="pagination">
+                        {{ template "_internal/pagination.html" . }}
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+    
+    <div class="footer footer1 wow fadeInUp">
+        <div class="wp">
+            <div class="fd-c">
+                <div class="fd-txt">
+                    <div class="item">总值班电话：<span class="tel">87951119</span></div>
+                    <div class="item">版权所有©印象校联商业集团 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
