@@ -1,6 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Project'
+relativeURLs = true
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
