@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Project</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:1313/website/</link>
     <description>Recent content on My New Hugo Project</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Feb 2026 08:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于寒假结束的通知</title>
-      <link>http://localhost:1313/announcement/second-news/</link>
+      <link>http://localhost:1313/website/announcement/second-news/</link>
       <pubDate>Tue, 24 Feb 2026 08:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/announcement/second-news/</guid>
+      <guid>http://localhost:1313/website/announcement/second-news/</guid>
       <description>&lt;p&gt;这是我们用 Markdown 写的第二篇新闻测试。&lt;/p&gt;&#xA;&lt;p&gt;当您在本地看到这段文字时，说明您的 Hugo 自动化生成器已经成功运转了！首页的新闻列表也会自动抓取到这个标题和日期。&lt;/p&gt;</description>
     </item>
     <item>
       <title>发放津贴的通知</title>
-      <link>http://localhost:1313/notice/second-news/</link>
+      <link>http://localhost:1313/website/notice/second-news/</link>
       <pubDate>Tue, 24 Feb 2026 08:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/notice/second-news/</guid>
+      <guid>http://localhost:1313/website/notice/second-news/</guid>
       <description>&lt;p&gt;这是我们用 Markdown 写的第二篇新闻测试。&lt;/p&gt;&#xA;&lt;p&gt;当您在本地看到这段文字时，说明您的 Hugo 自动化生成器已经成功运转了！首页的新闻列表也会自动抓取到这个标题和日期。&lt;/p&gt;</description>
     </item>
     <item>
       <title>热烈祝贺印象校联商业集团成立</title>
-      <link>http://localhost:1313/news/second-news/</link>
+      <link>http://localhost:1313/website/news/second-news/</link>
       <pubDate>Tue, 24 Feb 2026 08:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/news/second-news/</guid>
+      <guid>http://localhost:1313/website/news/second-news/</guid>
       <description>&lt;p&gt;这是我们用 Markdown 写的第二篇新闻测试。&lt;/p&gt;&#xA;&lt;p&gt;当您在本地看到这段文字时，说明您的 Hugo 自动化生成器已经成功运转了！首页的新闻列表也会自动抓取到这个标题和日期。&lt;/p&gt;</description>
     </item>
     <item>
       <title>与杭州电子科技大学青山湖校区合作案例</title>
-      <link>http://localhost:1313/party/first-party/</link>
+      <link>http://localhost:1313/website/party/first-party/</link>
       <pubDate>Mon, 23 Feb 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/party/first-party/</guid>
+      <guid>http://localhost:1313/website/party/first-party/</guid>
       <description>&lt;p&gt;这是我们用 Markdown 写的第一篇新闻测试。&lt;/p&gt;&#xA;&lt;p&gt;当您在本地看到这段文字时，说明您的 Hugo 自动化生成器已经成功运转了！首页的新闻列表也会自动抓取到这个标题和日期。&lt;/p&gt;</description>
     </item>
     <item>
       <title>关于放寒假发通知</title>
-      <link>http://localhost:1313/announcement/first-news/</link>
+      <link>http://localhost:1313/website/announcement/first-news/</link>
       <pubDate>Mon, 23 Feb 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/announcement/first-news/</guid>
+      <guid>http://localhost:1313/website/announcement/first-news/</guid>
       <description>&lt;p&gt;这是我们用 Markdown 写的第一篇新闻测试。&lt;/p&gt;&#xA;&lt;p&gt;当您在本地看到这段文字时，说明您的 Hugo 自动化生成器已经成功运转了！首页的新闻列表也会自动抓取到这个标题和日期。&lt;/p&gt;</description>
     </item>
     <item>
       <title>寒假结束，集团做好准备</title>
-      <link>http://localhost:1313/notice/first-news/</link>
+      <link>http://localhost:1313/website/notice/first-news/</link>
       <pubDate>Mon, 23 Feb 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/notice/first-news/</guid>
+      <guid>http://localhost:1313/website/notice/first-news/</guid>
       <description>&lt;p&gt;这是我们用 Markdown 写的第一篇新闻测试。&lt;/p&gt;&#xA;&lt;p&gt;当您在本地看到这段文字时，说明您的 Hugo 自动化生成器已经成功运转了！首页的新闻列表也会自动抓取到这个标题和日期。&lt;/p&gt;</description>
     </item>
     <item>
       <title>热烈祝贺印象校联商业集团2026年首战告捷</title>
-      <link>http://localhost:1313/news/first-news/</link>
+      <link>http://localhost:1313/website/news/first-news/</link>
       <pubDate>Mon, 23 Feb 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/news/first-news/</guid>
+      <guid>http://localhost:1313/website/news/first-news/</guid>
       <description>&lt;p&gt;这是我们用 Markdown 写的第一篇新闻测试。&lt;/p&gt;&#xA;&lt;p&gt;当您在本地看到这段文字时，说明您的 Hugo 自动化生成器已经成功运转了！首页的新闻列表也会自动抓取到这个标题和日期。&lt;/p&gt;</description>
     </item>
     <item>
       <title>招商合作与联系方式</title>
-      <link>http://localhost:1313/invest/contact/</link>
+      <link>http://localhost:1313/website/invest/contact/</link>
       <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/invest/contact/</guid>
+      <guid>http://localhost:1313/website/invest/contact/</guid>
       <description>&lt;p&gt;&lt;strong&gt;印象校联商业集团（杭州）有限公司&lt;/strong&gt; 致力于打造多元、便捷、高品质的校园商业生态圈。我们热忱欢迎优质品牌、连锁餐饮、零售商超及各类校园服务供应商入驻，共同为广大师生提供卓越的校园生活服务。&lt;/p&gt;&#xA;&lt;h3 id=&#34;-招商方向&#34;&gt;🌟 招商方向&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;特色餐饮&lt;/strong&gt;：地方风味小吃、品牌连锁快餐、轻食沙拉、烘焙甜点、茶饮咖啡等。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;校园新零售&lt;/strong&gt;：品牌便利店、连锁精品超市、文具百货、数码电子体验店等。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;生活服务&lt;/strong&gt;：图文快印、美发沙龙、洗衣干洗服务、眼镜专递、快递物流驿站等。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;文创与活动&lt;/strong&gt;：校园文化周边定制、社团赞助合作、快闪活动推广等。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;-入驻优势&#34;&gt;💡 入驻优势&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;庞大的消费客群&lt;/strong&gt;：业务覆盖省内多所知名高校，坐拥数十万高频、稳定的年轻消费群体。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;专业的运营赋能&lt;/strong&gt;：集团提供统一的高标准物业管理、节点营销策划及数字化收银系统支持。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;完善的硬件设施&lt;/strong&gt;：标准化的商铺交付条件，水、电、排烟、网络等基础配套一应俱全，让您的品牌轻松落地。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-联系我们&#34;&gt;📞 联系我们&lt;/h3&gt;&#xA;&lt;p&gt;如果您有意向与我们合作，请准备好您的&lt;strong&gt;企业营业执照、品牌画册（PPT/PDF）及合作意向书&lt;/strong&gt;，通过以下方式与我们的招商团队取得联系：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;👤 &lt;strong&gt;招商联系人&lt;/strong&gt;：张经理 / 王经理&lt;/li&gt;&#xA;&lt;li&gt;☎️ &lt;strong&gt;招商热线&lt;/strong&gt;：0571-8888 8888 （工作日 9:00 - 17:30）&lt;/li&gt;&#xA;&lt;li&gt;📱 &lt;strong&gt;手机/微信&lt;/strong&gt;：138-0000-0000&lt;/li&gt;&#xA;&lt;li&gt;✉️ &lt;strong&gt;合作邮箱&lt;/strong&gt;：&lt;strong&gt;&lt;a href=&#34;mailto:zhaoshang@yinxiangxiaolian.com&#34;&gt;zhaoshang@yinxiangxiaolian.com&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;📍 &lt;strong&gt;集团总部地址&lt;/strong&gt;：浙江省杭州市西湖区某某路XXX号印象校联大厦XX楼&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;收到您的邮件资料后，我们的招商专员将在 1-2 个工作日内进行初步审核并与您取得联系，期待与您的合作！&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>集团介绍</title>
-      <link>http://localhost:1313/about/overview/</link>
+      <link>http://localhost:1313/website/about/overview/</link>
       <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/overview/</guid>
+      <guid>http://localhost:1313/website/about/overview/</guid>
       <description>&lt;p&gt;&lt;strong&gt;印象校联商业集团（杭州）有限公司&lt;/strong&gt;是一家深耕校园生态、专注服务高校师生的综合性商业运营企业。集团以“构建美好校园生活”为核心愿景，业务深度聚焦校园新零售、智慧餐饮、校园本地生活服务、文创周边及学生活动支持等几大核心板块。目前，集团业务已辐射国内多所知名高校，致力于打造全方位、多维度的高质量校园商业生态圈。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./images/about_1.jpg&#34; alt=&#34;集团实景&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;服务理念与荣誉&#34;&gt;服务理念与荣誉&lt;/h3&gt;&#xA;&lt;p&gt;自成立以来，印象校联始终将“以学生为本，全心全意服务学子”作为企业发展的根本动力。通过引入数字化商业管理、优化供应链体系并不断提升门店服务体验，集团先后获得了“校园优质商业服务商”、“深受大学生欢迎的校园品牌”、“智慧校园创新先锋企业”等多项行业殊荣。我们深知，印象校联不仅是校园商业的运营者，更是百万青年学子成长路上的贴心陪伴者与生活保障者。&lt;/p&gt;&#xA;&lt;h3 id=&#34;品质与温情并重&#34;&gt;品质与温情并重&lt;/h3&gt;&#xA;&lt;p&gt;我们敏锐洞察当代大学生的消费趋势与生活需求，为青年学子提供安全、便捷、潮流的消费体验。从严控食品安全的特色档口，到汇聚全球好物的校园精品商超；从便捷高效的快递驿站，到充满文化气息的校园社交空间。我们将“品质”与“温情”注入每一个服务细节，确保每一位同学都能在校园内享受到物美价廉、贴心周到的后勤商业服务。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./images/about_2.jpg&#34; alt=&#34;服务场景&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;未来展望&#34;&gt;未来展望&lt;/h3&gt;&#xA;&lt;p&gt;面向新时代，印象校联商业集团将继续秉承“创新、责任、共赢”的发展理念，深化“校企合作、产教融合”模式。我们将持续探索前沿科技在校园场景中的应用，赋能校园服务数字化升级，用更加优质的商业产品和充满温度的服务体验，助力学子们安心求学、快乐生活，奋力迈向中国高校后勤服务领域的领军品牌行列。&lt;/p&gt;</description>
     </item>
   </channel>

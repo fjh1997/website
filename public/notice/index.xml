@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>通知 on My New Hugo Project</title>
-    <link>http://localhost:1313/notice/</link>
+    <link>http://localhost:1313/website/notice/</link>
     <description>Recent content in 通知 on My New Hugo Project</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Feb 2026 08:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/notice/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/website/notice/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>发放津贴的通知</title>
-      <link>http://localhost:1313/notice/second-news/</link>
+      <link>http://localhost:1313/website/notice/second-news/</link>
       <pubDate>Tue, 24 Feb 2026 08:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/notice/second-news/</guid>
+      <guid>http://localhost:1313/website/notice/second-news/</guid>
       <description>&lt;p&gt;这是我们用 Markdown 写的第二篇新闻测试。&lt;/p&gt;&#xA;&lt;p&gt;当您在本地看到这段文字时，说明您的 Hugo 自动化生成器已经成功运转了！首页的新闻列表也会自动抓取到这个标题和日期。&lt;/p&gt;</description>
     </item>
     <item>
       <title>寒假结束，集团做好准备</title>
-      <link>http://localhost:1313/notice/first-news/</link>
+      <link>http://localhost:1313/website/notice/first-news/</link>
       <pubDate>Mon, 23 Feb 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/notice/first-news/</guid>
+      <guid>http://localhost:1313/website/notice/first-news/</guid>
       <description>&lt;p&gt;这是我们用 Markdown 写的第一篇新闻测试。&lt;/p&gt;&#xA;&lt;p&gt;当您在本地看到这段文字时，说明您的 Hugo 自动化生成器已经成功运转了！首页的新闻列表也会自动抓取到这个标题和日期。&lt;/p&gt;</description>
     </item>
   </channel>
