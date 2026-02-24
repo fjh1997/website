@@ -1,7 +1,6 @@
-baseURL = 'https://blog.fjh1997.top/website/'
+baseURL = 'https://hzyxxl.fjh1997.top/'
 languageCode = 'en-us'
 title = 'My New Hugo Project'
-relativeURLs = true
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
