@@ -1,0 +1,188 @@
+{{- $title := .Title | default .Site.Title -}}
+{{- $description := .Params.description | default .Site.Params.description -}}
+{{- $keywords := .Params.keywords | default .Site.Params.keywords -}}
+{{- $image := .Params.image | default .Site.Params.image -}}
+{{- $url := .Permalink -}}
+
+<!-- SEO Meta -->
+<meta name="description" content="{{ $description }}">
+<meta name="keywords" content="{{ $keywords }}">
+<meta name="author" content="{{ .Site.Params.author }}">
+<link rel="canonical" href="{{ $url }}">
+
+<!-- GEO Meta -->
+<meta name="geo.region" content="CN-ZJ">
+<meta name="geo.placename" content="杭州市钱塘区">
+<meta name="geo.position" content="30.3126;120.3554">
+<meta name="ICBM" content="30.3126, 120.3554">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ $url }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="zh_CN">
+{{- if .IsPage }}
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- else }}
+<meta property="og:type" content="website">
+{{- end }}
+{{- if $image }}
+<meta property="og:image" content="{{ $image | absURL }}">
+{{- end }}
+
+<!-- JSON-LD LocalBusiness -->
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "{{ .Site.Title }}",
+  "alternateName": "印象校联",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ "images/yxxl_logo_full.jpg" | absURL }}",
+  "image": "{{ "images/yxxl_logo_full.jpg" | absURL }}",
+  "description": "{{ .Site.Params.description }}",
+  "foundingDate": "1999-04",
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 200
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "学林街1298-1306号",
+    "addressLocality": "杭州市",
+    "addressRegion": "浙江省",
+    "postalCode": "310018",
+    "addressCountry": "CN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 30.3126,
+    "longitude": 120.3554
+  },
+  "telephone": "+86-571-87951119",
+  "email": "hzyxxl8753@163.com",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+86-13805748753",
+      "contactType": "customer service",
+      "availableLanguage": "Chinese"
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+86-571-87951119",
+      "contactType": "emergency",
+      "hoursAvailable": "Mo-Su 00:00-23:59"
+    }
+  ],
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 30.3126,
+      "longitude": 120.3554
+    },
+    "geoRadius": "500000"
+  },
+  "priceRange": "$$",
+  "currenciesAccepted": "CNY",
+  "paymentAccepted": "Cash, WeChat Pay, Alipay",
+  "hasCredential": [
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "ISO9001 质量管理体系认证"},
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "ISO22000 食品安全管理体系认证"},
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "ISO14001 环境管理体系认证"},
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "ISO45001 职业健康安全管理体系认证"},
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "五星售后服务认证"},
+    {"@type": "EducationalOccupationalCredential", "credentialCategory": "供应链安全管理体系认证"}
+  ],
+  "award": ["全国教育超市样板店", "浙江省教育超市标准店", "高校超市示范店", "高校后勤物业系统先进集体"],
+  "knowsAbout": ["教育超市", "校园商业服务", "高校后勤管理", "食品安全管理", "供应链管理"]
+}
+</script>
+{{- end }}
+
+<!-- JSON-LD FAQPage -->
+{{- if .Params.faq }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $i, $item := .Params.faq }}
+    {{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": "{{ $item.q }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ $item.a }}"
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end }}
+
+<!-- JSON-LD Article -->
+{{- if and .IsPage (not .Params.faq) }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ $description }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ "images/yxxl_logo_full.jpg" | absURL }}"
+    }
+  },
+  "mainEntityOfPage": "{{ .Permalink }}"
+}
+</script>
+{{- end }}
+
+<!-- JSON-LD BreadcrumbList -->
+{{- if not .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首页",
+      "item": "{{ .Site.BaseURL }}"
+    }
+    {{- if .Section }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ with index (dict "news" "新闻动态" "party" "校园合作" "notice" "通知" "announcement" "公告" "about" "集团概况" "invest" "招商引资") .Section }}{{ . }}{{ else }}{{ .Section }}{{ end }}",
+      "item": "{{ printf "/%s/" .Section | absURL }}"
+    }
+    {{- end }}
+    {{- if .IsPage }},
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end }}

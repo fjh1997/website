@@ -1,6 +1,20 @@
 baseURL = 'https://www.yxxlhz.com/'
-languageCode = 'en-us'
+languageCode = 'zh-CN'
 title = '杭州印象校联企业管理有限公司'
+
+enableRobotsTXT = true
+
+[params]
+  description = '杭州印象校联企业管理有限公司，专注高校教育超市连锁经营、校园商业服务管理，服务浙江省内外多所知名高校，荣获全国教育超市样板店称号。'
+  keywords = '印象校联,教育超市,校园超市,高校后勤,杭州印象校联,校园商业服务,教育超市连锁'
+  author = '杭州印象校联企业管理有限公司'
+  image = '/images/yxxl_logo_full.jpg'
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.5
+  filename = 'sitemap.xml'
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
