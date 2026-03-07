@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.yxxlhz.com/sitemap.xml
+Sitemap: https://demo.yxxlhz.com/sitemap.xml

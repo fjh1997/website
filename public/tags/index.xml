@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 杭州印象校联企业管理有限公司</title>
-    <link>https://www.yxxlhz.com/tags/</link>
+    <link>https://demo.yxxlhz.com/tags/</link>
     <description>Recent content in Tags on 杭州印象校联企业管理有限公司</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <atom:link href="https://www.yxxlhz.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://demo.yxxlhz.com/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

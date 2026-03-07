@@ -2,7 +2,7 @@
 
 基于 [Hugo](https://gohugo.io/) 构建的企业官网，支持 [Pages CMS](https://pagescms.org/) 在线内容管理。
 
-线上地址：https://www.yxxlhz.com/
+线上地址：https://demo.yxxlhz.com/
 
 ## 环境要求
 
