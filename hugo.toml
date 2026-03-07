@@ -1,6 +1,6 @@
 baseURL = 'https://www.yxxlhz.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Project'
+title = '杭州印象校联企业管理有限公司'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'

@@ -2,56 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://www.yxxlhz.com/news/quality-management/</loc>
+    <lastmod>2026-02-26T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.yxxlhz.com/news/</loc>
+    <lastmod>2026-02-26T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.yxxlhz.com/</loc>
+    <lastmod>2026-02-26T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.yxxlhz.com/news/team-building/</loc>
+    <lastmod>2026-02-26T08:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.yxxlhz.com/notice/emergency-plan/</loc>
+    <lastmod>2026-02-25T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.yxxlhz.com/notice/</loc>
+    <lastmod>2026-02-25T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.yxxlhz.com/news/supply-chain/</loc>
+    <lastmod>2026-02-25T08:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://www.yxxlhz.com/announcement/</loc>
     <lastmod>2026-02-24T08:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/announcement/</loc>
+    <loc>https://www.yxxlhz.com/announcement/second-news/</loc>
     <lastmod>2026-02-24T08:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/announcement/second-news/</loc>
+    <loc>https://www.yxxlhz.com/notice/second-news/</loc>
     <lastmod>2026-02-24T08:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notice/second-news/</loc>
+    <loc>https://www.yxxlhz.com/news/second-news/</loc>
     <lastmod>2026-02-24T08:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/news/</loc>
-    <lastmod>2026-02-24T08:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/news/second-news/</loc>
-    <lastmod>2026-02-24T08:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/notice/</loc>
-    <lastmod>2026-02-24T08:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/party/first-party/</loc>
+    <loc>https://www.yxxlhz.com/party/first-party/</loc>
     <lastmod>2026-02-23T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/announcement/first-news/</loc>
+    <loc>https://www.yxxlhz.com/announcement/first-news/</loc>
     <lastmod>2026-02-23T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notice/first-news/</loc>
+    <loc>https://www.yxxlhz.com/notice/first-news/</loc>
     <lastmod>2026-02-23T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/party/</loc>
+    <loc>https://www.yxxlhz.com/party/</loc>
     <lastmod>2026-02-23T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/news/first-news/</loc>
+    <loc>https://www.yxxlhz.com/news/first-news/</loc>
     <lastmod>2026-02-23T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://www.yxxlhz.com/about/</loc>
     <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/invest/</loc>
+    <loc>https://www.yxxlhz.com/invest/</loc>
     <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/overview/</loc>
+    <loc>https://www.yxxlhz.com/about/overview/</loc>
     <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/invest/contact/</loc>
+    <loc>https://www.yxxlhz.com/invest/contact/</loc>
     <lastmod>2026-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://www.yxxlhz.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://www.yxxlhz.com/tags/</loc>
   </url>
 </urlset>

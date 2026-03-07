@@ -47,8 +47,9 @@
 
 .m-slider1 .con{display: block;position: relative;}
 .m-slider1 .pic{padding-top: 64%;height: 0;position: relative;overflow: hidden;}
+.m-slider1 .pic::after{content:'';position:absolute;left:0;right:0;bottom:0;height:60%;background:linear-gradient(to top,rgba(0,0,0,.55),transparent);pointer-events:none;}
 .m-slider1 .pic img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;display: block;}
-.m-slider1 .txt{position: absolute;left: 20px;right: 20px;bottom: 15px;color: #fff;}
+.m-slider1 .txt{position: absolute;left: 20px;right: 20px;bottom: 15px;color: #fff;z-index:1;text-shadow:0 1px 3px rgba(0,0,0,.5);}
 .m-slider1 .date{font-size: 14px;padding-left: 19px;display: block;font-family: 'TimesNewRomanPSMT';
 	background: url(../images/i-04.png) no-repeat left center;
 	-o-background-size: 13px auto;
